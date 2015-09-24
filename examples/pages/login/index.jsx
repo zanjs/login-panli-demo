@@ -13,7 +13,7 @@ var Form = CreateForm({
     return {
       username: {
         required: true,
-        label: 'Username',
+        label: '用户名',
         type: function (val) {
           if (/^[a-zA-Z0-9\-]{1,20}$/.test(val)) return false;
           return 'Must be 1-20 characters long and use only "-" and alphanumeric symbols';

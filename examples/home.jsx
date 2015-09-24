@@ -14,7 +14,7 @@ function generateVariant(propsets) {
 
 var variants = {
   showLabels: [true, false],
-  signUpMessage: ['Sign up', 'Join', 'Join us', 'One. Of. Us.'],
+  signUpMessage: ['注册', '注册', '注册', '注册'],
   buttonColor: ['#00BE94', '#69A0FC']
 };
 
@@ -43,25 +43,9 @@ module.exports = React.createClass({
   },
 
   render: function () {
-
-    return (<div className="home">
-      <header>
-        <h1>Build robust, testable forms in minutes<br/>with <strong>React Formation</strong></h1>
-        <p><Link to="examples">See the guide</Link></p>
-      </header>
-
-      <Login {...this.state.variants} />
-      <footer>
-        <p>This login form was built in <a href="https://github.com/k88hudson/react-formation/blob/gh-pages/examples/pages/login/index.jsx">under 100 lines of code</a> and includes:</p>
-        <ul>
-          <li>Advanced custom validations for each field</li>
-          <li>Password strength testing</li>
-          <li>Pre-submit validation</li>
-          <li>Smart display of error messages</li>
-          <li>Hooks for A/B testing variations (<a href="#" onClick={this.refreshTest}>try refreshing!</a>)</li>
-        </ul>
-        <p><GithubLink /></p>
-      </footer>
-    </div>);
+    return (
+      <div className="home">
+        <Login {...this.state.variants} />
+      </div>);
   }
 });
