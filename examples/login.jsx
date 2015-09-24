@@ -1,5 +1,5 @@
 var React = require('react/addons');
-var Register = require('./pages/register/index.jsx');
+var Register = require('./pages/login/index.jsx');
 var {Link} = require('react-router');
 
 function generateVariant(propsets) {
@@ -14,7 +14,7 @@ function generateVariant(propsets) {
 
 var variants = {
   showLabels: [true, false],
-  signUpMessage: ['注册', '注册', '注册', '注册'],
+  signUpMessage: ['登录', '登录', '登录', '登录'],
   buttonColor: ['#00BE94', '#69A0FC']
 };
 

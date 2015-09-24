@@ -1,5 +1,5 @@
 {
-  "name": "react-formation",
+  "name": "login-panli-demo",
   "version": "0.1.0",
   "description": "",
   "main": "dist/form.js",
@@ -23,7 +23,7 @@
     "watch:dist": "npm run build:dist --- --watch",
     "server": "live-server ./ --port=4240"
   },
-  "author": "k88hudson",
+  "author": "zanjs",
   "license": "MPL-2.0",
   "dependencies": {
     "classnames": "^2.1.3",

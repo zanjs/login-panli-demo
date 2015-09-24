@@ -65,6 +65,7 @@ var routes = (
     <Route name="examples" handler={Examples}>
       {routeDefinitions}
     </Route>
+    <Route name="login"  handler={require('./login.jsx')} />,
     <DefaultRoute handler={require('./home.jsx')}/>
   </Route>
 );
